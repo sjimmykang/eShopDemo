@@ -1,8 +1,6 @@
 @use "partials/normalize";
-@use "partials/variables" as *;
+@use "partials/variables";
+@use "partials/baseStyles";
 @use "partials/typography";
+@use "partials/sections";
 
-
-.bagIcon {
-    width: 30px;
-}

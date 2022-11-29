@@ -1,0 +1,18 @@
+@use "./variables";
+/* if "variables" as *;, you can skip the variables.$asdf
+*/
+
+.bagIcon {
+    width: 30px;
+}
+
+// body {
+    // background-color: variables.$primary;
+    //you can drop the "variables." part if you ported in the variables partial as *.
+// }
+
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
