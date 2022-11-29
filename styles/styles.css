@@ -411,8 +411,10 @@ a {
   margin-bottom: 20px;
 }
 .categoryGallery .item:hover, .categoryGallery .item:focus {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  /* above or below is fine. but becareful if a function runs on older browser.
+  for example. scale does not work on internet explorer so care.
+  */
+  scale: 0.95;
 }
 .categoryGallery .itemOne {
   background-color: #ffd698;
@@ -425,4 +427,18 @@ a {
 }
 .categoryGallery .itemFour {
   background-color: #fff5f5;
+}
+
+/* have general 3 break points
+small comp, tablets, phones
+
+*/
+@media (max-width: 1000px) {
+  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+}
+@media (max-width: 800px) {
+  /* all of our styles for TABLET devices will go within this breakpoint */
+}
+@media (max-width: 500px) {
+  /* all of our styles for MOBILE devices will go within this breakpoint */
 }

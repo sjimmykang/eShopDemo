@@ -11,7 +11,7 @@
         padding: 45px;
         margin: 50px 25px 25px 0;
         border-radius: 10%;
-        display: flex;
+        display: flex; 
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -21,10 +21,14 @@
             border-radius: 10%;
             margin-bottom: 20px;
         }
-        
+
         &:hover,
         &:focus {
-            transform: scale(0.95);
+            // transform: scale(0.95);
+            /* above or below is fine. but becareful if a function runs on older browser.
+            for example. scale does not work on internet explorer so care.
+            */
+            scale: 0.95;
         }
     }
 
