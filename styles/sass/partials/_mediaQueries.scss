@@ -6,6 +6,31 @@ small comp, tablets, phones
 //this uses max-width. so its pc first setup
 @media (max-width: 1000px) {
     /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+
+    footer {
+        .footerFlexContainer {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 100px;
+            .logo {
+                margin-bottom: 30px;
+            }
+        }
+
+        .footerNav {
+            width: 80%;
+
+            nav {
+                ul {
+                    width: auto;
+                    //centers the container
+                    /*also need this much specificity due to the previous ul css has high specificity.
+                    if lower specificity, it would not be overwritten for media queries
+                    */
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 800px) {
